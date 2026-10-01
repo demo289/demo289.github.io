@@ -99,9 +99,18 @@
     text-decoration: none;
     transition: 0.2s;
   }
+  .value.accent::after {
+    content: ' ↗';
+    font-size: 13px;
+    opacity: 0.7;
+    transition: 0.2s;
+  }
   .value.accent:hover {
     color: #fff;
     text-shadow: 0 0 12px #ff8fbf;
+  }
+  .value.accent:hover::after {
+    opacity: 1;
   }
   .value.dim { color: #444; font-style: italic; }
   .footer {
@@ -132,6 +141,14 @@
     <div class="row">
       <span class="label">date</span>
       <span class="value dim">secret</span>
+    </div>
+    <div class="row">
+      <span class="label">country</span>
+      <span class="value">Russia 🇷🇺</span>
+    </div>
+    <div class="row">
+      <span class="label">vibe</span>
+      <span class="value accent">internet friend )</span>
     </div>
     <div class="row">
       <span class="label">описание</span>
